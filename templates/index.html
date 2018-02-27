@@ -1,0 +1,27 @@
+<!-- THIS IS A BASIC HTML WITH JUST THE SELECT FIELD -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dynamic Select Field</title>
+    </head>
+    <body>
+        <div>
+            {{ form.hidden_tag() }}
+            <form method="POST" action="{{ url_for('index') }}" role="form">
+                <div>
+                    {{ form.names.label }}
+                    {{ form.names|safe}}
+                </div>
+                <button type="submit">Select Name</button>
+            
+            </form>
+            <div>
+                
+            </div>
+            
+        </div>
+    </body>
+    
+</html>
